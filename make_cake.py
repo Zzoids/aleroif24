@@ -1,0 +1,141 @@
+def make_cake_svg():
+    return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <filter id="cakeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="goldCandle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="75%" stop-color="#FEF08A" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="cakePink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDA4AF" />
+      <stop offset="100%" stop-color="#FB7185" />
+    </linearGradient>
+    <linearGradient id="cakePurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DDD6FE" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <linearGradient id="cakeCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="100%" stop-color="#FEF3C7" />
+    </linearGradient>
+    <linearGradient id="frostingWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF1F2" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cakeGlow)">
+    <!-- Base Plate -->
+    <ellipse cx="100" cy="225" rx="85" ry="12" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2" />
+    <ellipse cx="100" cy="223" rx="80" ry="10" fill="#F8FAFC" />
+
+    <!-- 1. Bottom Tier (Strawberry Rose) -->
+    <g transform="translate(0, 0)">
+      <!-- Body -->
+      <path d="M 30,175 Q 30,170 34,168 Q 100,164 166,168 Q 170,170 170,175 L 170,215 Q 100,230 30,215 Z" fill="url(#cakePink)" />
+      <!-- Bottom cream trim -->
+      <ellipse cx="100" cy="217" rx="70" ry="6" fill="#FFF1F2" />
+      <!-- Drips -->
+      <path d="M 30,175 Q 40,192 48,178 Q 58,198 68,178 Q 80,202 92,179 Q 105,200 118,179 Q 132,203 145,178 Q 158,196 170,175 L 170,170 Q 100,165 30,170 Z" fill="url(#frostingWhite)" opacity="0.95" />
+      <!-- Sprinkles & pearls -->
+      <circle cx="50" cy="186" r="2" fill="#F59E0B" />
+      <circle cx="75" cy="190" r="2.5" fill="#EC4899" />
+      <circle cx="100" cy="187" r="2" fill="#8B5CF6" />
+      <circle cx="125" cy="191" r="2.5" fill="#3B82F6" />
+      <circle cx="150" cy="186" r="2" fill="#10B981" />
+      <!-- Top surface -->
+      <ellipse cx="100" cy="170" rx="70" ry="10" fill="#FFE4E6" />
+    </g>
+
+    <!-- 2. Middle Tier (Aleroif Lavender Purple) -->
+    <g transform="translate(0, 0)">
+      <!-- Body -->
+      <path d="M 50,125 Q 50,121 54,119 Q 100,116 146,119 Q 150,121 150,125 L 150,165 Q 100,178 50,165 Z" fill="url(#cakePurple)" />
+      <!-- Drips -->
+      <path d="M 50,125 Q 60,140 68,127 Q 78,145 88,128 Q 100,148 112,128 Q 125,145 135,127 Q 143,138 150,125 L 150,120 Q 100,116 50,120 Z" fill="url(#frostingWhite)" opacity="0.95" />
+      <!-- Gold star sprinkles -->
+      <polygon points="72,138 73,141 76,141 74,143 75,146 72,144 69,146 70,143 68,141 71,141" fill="#F59E0B" />
+      <polygon points="128,138 129,141 132,141 130,143 131,146 128,144 125,146 126,143 124,141 127,141" fill="#F59E0B" />
+      <circle cx="100" cy="142" r="3" fill="#EC4899" />
+      <!-- Top surface -->
+      <ellipse cx="100" cy="120" rx="50" ry="8" fill="#EDE9FE" />
+    </g>
+
+    <!-- 3. Top Tier (Vanilla & Strawberries) -->
+    <g transform="translate(0, 0)">
+      <!-- Body -->
+      <path d="M 70,80 Q 70,77 74,75 Q 100,73 126,75 Q 130,77 130,80 L 130,115 Q 100,125 70,115 Z" fill="url(#cakeCream)" />
+      <!-- Cream drips -->
+      <path d="M 70,80 Q 78,94 85,82 Q 95,96 102,83 Q 112,95 120,82 Q 126,90 130,80 L 130,75 Q 100,72 70,75 Z" fill="#F43F5E" opacity="0.85" />
+      <!-- Top surface -->
+      <ellipse cx="100" cy="75" rx="30" ry="6" fill="#FFFBEB" />
+
+      <!-- Glossy Fresh Strawberries on top -->
+      <!-- Left Strawberry -->
+      <g transform="translate(74, 62) scale(0.7)">
+        <path d="M 12,0 C 24,0 24,18 12,24 C 0,18 0,0 12,0 Z" fill="#E11D48" />
+        <path d="M 10,2 Q 12,-3 14,2 Q 18,0 16,5 Q 8,5 10,2 Z" fill="#15803D" />
+        <circle cx="9" cy="8" r="0.8" fill="#FEF08A" />
+        <circle cx="15" cy="10" r="0.8" fill="#FEF08A" />
+        <circle cx="11" cy="16" r="0.8" fill="#FEF08A" />
+      </g>
+      <!-- Right Strawberry -->
+      <g transform="translate(112, 62) scale(0.7)">
+        <path d="M 12,0 C 24,0 24,18 12,24 C 0,18 0,0 12,0 Z" fill="#E11D48" />
+        <path d="M 10,2 Q 12,-3 14,2 Q 18,0 16,5 Q 8,5 10,2 Z" fill="#15803D" />
+        <circle cx="9" cy="8" r="0.8" fill="#FEF08A" />
+        <circle cx="15" cy="10" r="0.8" fill="#FEF08A" />
+        <circle cx="11" cy="16" r="0.8" fill="#FEF08A" />
+      </g>
+    </g>
+
+    <!-- 4. The 26 Number Candles -->
+    <!-- Candle "2" -->
+    <g transform="translate(82, 38)">
+      <!-- Wick -->
+      <line x1="10" y1="6" x2="10" y2="0" stroke="#78350F" stroke-width="1.5" stroke-linecap="round" />
+      <!-- Number 2 Body -->
+      <path d="M 4,14 C 4,8 16,8 16,14 C 16,18 6,24 5,28 L 17,28 L 17,31 L 3,31 L 3,27 C 5,23 13,18 13,14 C 13,11 7,11 7,14 Z" fill="url(#goldCandle)" stroke="#78350F" stroke-width="0.8" filter="url(#cakeGlow)" />
+      <!-- Flame 2 -->
+      <g transform="translate(10, 0)" filter="url(#flameGlow)">
+        <path d="M 0,-1 C -3,-5 -4,-10 0,-16 C 4,-10 3,-5 0,-1 Z" fill="url(#flameGrad)">
+          <animate attributeName="d" values="M 0,-1 C -3,-5 -4,-10 0,-16 C 4,-10 3,-5 0,-1 Z; M 0,-1 C -2,-6 -5,-11 0,-18 C 3,-11 4,-6 0,-1 Z; M 0,-1 C -4,-5 -3,-10 0,-15 C 3,-9 2,-5 0,-1 Z; M 0,-1 C -3,-5 -4,-10 0,-16 C 4,-10 3,-5 0,-1 Z" dur="0.8s" repeatCount="indefinite" />
+        </path>
+        <circle cx="0" cy="-6" r="2" fill="#FFFFFF" opacity="0.9" />
+      </g>
+    </g>
+
+    <!-- Candle "6" -->
+    <g transform="translate(104, 38)">
+      <!-- Wick -->
+      <line x1="10" y1="6" x2="10" y2="0" stroke="#78350F" stroke-width="1.5" stroke-linecap="round" />
+      <!-- Number 6 Body -->
+      <path d="M 15,10 C 13,8 9,8 7,12 C 5,16 4,21 4,26 C 4,29 7,32 11,32 C 15,32 17,29 17,25 C 17,21 14,18 10,18 C 8,18 7,19 6,20 C 6,16 8,12 14,12 Z M 10,21 C 12,21 14,23 14,25 C 14,27 12,29 10,29 C 8,29 7,27 7,25 C 7,23 8,21 10,21 Z" fill="url(#goldCandle)" stroke="#78350F" stroke-width="0.8" filter="url(#cakeGlow)" />
+      <!-- Flame 6 -->
+      <g transform="translate(10, 0)" filter="url(#flameGlow)">
+        <path d="M 0,-1 C -3,-5 -4,-10 0,-16 C 4,-10 3,-5 0,-1 Z" fill="url(#flameGrad)">
+          <animate attributeName="d" values="M 0,-1 C -2,-5 -5,-10 0,-17 C 4,-11 2,-5 0,-1 Z; M 0,-1 C -4,-6 -3,-11 0,-15 C 3,-10 4,-6 0,-1 Z; M 0,-1 C -3,-5 -4,-10 0,-18 C 3,-11 3,-5 0,-1 Z; M 0,-1 C -2,-5 -5,-10 0,-17 C 4,-11 2,-5 0,-1 Z" dur="0.9s" repeatCount="indefinite" />
+        </path>
+        <circle cx="0" cy="-6" r="2" fill="#FFFFFF" opacity="0.9" />
+      </g>
+    </g>
+  </g>
+</svg>'''
+
+with open(r'd:\Proyectos\aleroif24-web\public\birthday_cake_26.svg', 'w', encoding='utf-8') as f:
+    f.write(make_cake_svg())
+
+print('Saved birthday_cake_26.svg!')

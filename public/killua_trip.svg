@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" width="100%" height="100%">
+  <defs>
+    <filter id="chibiShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+    <linearGradient id="boxPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#BE123C" />
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Small stone that tripped him -->
+  <ellipse cx="65" cy="195" rx="8" ry="4" fill="#64748B" stroke="#475569" stroke-width="1.5" />
+  <path d="M 60,190 L 72,185" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Comical shock exclamation marks -->
+  <text x="25" y="45" font-family="sans-serif" font-size="28" font-weight="black" fill="#EF4444">!?</text>
+
+  <!-- Killua Tripping / Flying Forward (Tilted 30 degrees) -->
+  <g transform="translate(60, 60) rotate(26)" filter="url(#chibiShadow)">
+    <!-- Legs Flailing in air -->
+    <g transform="translate(20, 110)">
+      <path d="M -10,0 L -28,-15 L -20,-22 L 0,-4 Z" fill="#A78BFA" />
+      <path d="M -25,-18 L -38,-28" stroke="#FED7AA" stroke-width="8" stroke-linecap="round" />
+      <path d="M -48,-32 C -50,-36 -44,-40 -38,-38 L -32,-32 C -32,-28 -44,-26 -48,-32 Z" fill="#6366F1" />
+
+      <path d="M 10,0 L 25,22 L 18,28 L 0,6 Z" fill="#8B5CF6" />
+      <path d="M 22,22 L 32,38" stroke="#FED7AA" stroke-width="8" stroke-linecap="round" />
+      <path d="M 26,42 C 26,38 34,34 40,36 L 46,42 C 44,46 30,46 26,42 Z" fill="#4F46E5" />
+    </g>
+
+    <!-- Torso -->
+    <g transform="translate(30, 75)">
+      <path d="M 8,-6 L 22,-6 L 24,6 L 6,6 Z" fill="#1E293B" />
+      <path d="M -2,4 Q 15,10 32,4 L 36,38 Q 15,44 -6,38 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+      <polygon points="10,4 20,4 15,14" fill="#0F172A" />
+    </g>
+
+    <!-- Hair Back -->
+    
+    <!-- Back Hair Spikes -->
+    <path d="M 28,55 C 10,48 5,30 18,18 C 22,12 30,8 40,6 C 45,2 60,0 72,4 C 85,0 102,4 108,12 C 120,18 126,34 116,52 C 125,58 120,70 110,75 C 106,78 100,78 96,75 L 28,75 Z" fill="#E2E8F0" />
+    <path d="M 18,35 C 4,32 0,22 8,14 C 15,8 25,10 32,16 Z" fill="#F1F5F9" />
+    <path d="M 112,32 C 128,30 132,18 122,12 C 114,6 104,10 98,16 Z" fill="#F1F5F9" />
+
+    <!-- Main Fluffy Volume -->
+    <path d="M 22,48 C 14,35 20,20 34,14 C 42,6 60,5 72,8 C 84,4 102,8 110,16 C 122,24 124,40 114,52 C 118,62 110,72 98,72 C 90,72 82,70 78,66 C 72,70 60,70 54,66 C 46,70 34,70 28,64 C 22,60 20,54 22,48 Z" fill="#F8FAFC" />
+    
+    <!-- Top Signature Spikes -->
+    <path d="M 45,12 C 40,-4 58,2 52,14 Z" fill="#FFFFFF" />
+    <path d="M 62,8 C 65,-8 80,0 74,12 Z" fill="#FFFFFF" />
+    <path d="M 80,10 C 90,-4 102,6 92,16 Z" fill="#FFFFFF" />
+    
+
+    <!-- Face (Pale) -->
+    <path d="M 32,36 C 30,58 38,78 68,78 C 98,78 106,58 104,36 C 104,24 32,24 32,36 Z" fill="#FFF7ED" />
+
+    <!-- Anime Sweat Drops -->
+    <path d="M 22,35 C 18,30 24,20 28,26 C 30,30 26,38 22,35 Z" fill="#38BDF8" opacity="0.9" />
+    <path d="M 108,30 C 104,25 110,15 114,21 C 116,25 112,33 108,30 Z" fill="#38BDF8" opacity="0.9" />
+
+    <!-- Comical Shock Eyes: Spiral / Wide Blank (>o<) -->
+    <!-- Left Eye: Spiral of panic -->
+    <g transform="translate(48, 46)">
+      <circle cx="6" cy="6" r="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2" />
+      <path d="M 6,6 m -4,0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+    <!-- Right Eye: Spiral of panic -->
+    <g transform="translate(78, 46)">
+      <circle cx="6" cy="6" r="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2" />
+      <path d="M 6,6 m -4,0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Comical Anime O-Mouth of Panic (D:) -->
+    <ellipse cx="68" cy="68" rx="7" ry="8" fill="#991B1B" stroke="#450A0A" stroke-width="1.5" />
+    <ellipse cx="68" cy="72" rx="4" ry="3" fill="#FDA4AF" />
+
+    <!-- Bangs -->
+    
+    <!-- Front Bangs falling on forehead -->
+    <path d="M 32,32 C 36,44 44,48 48,34 C 52,48 62,50 64,36 C 68,52 78,50 82,34 C 86,46 94,44 98,32 C 104,40 108,42 110,36 C 106,26 98,22 92,20 C 70,18 50,20 32,32 Z" fill="#FFFFFF" />
+    <!-- Stray locks -->
+    <path d="M 46,38 C 50,48 56,46 54,38 Z" fill="#F1F5F9" />
+    <path d="M 72,38 C 76,50 82,46 80,38 Z" fill="#F1F5F9" />
+    
+
+    <!-- Arms Flailing Up in shock -->
+    <path d="M 25,80 Q 5,60 -5,45" stroke="#FED7AA" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="-5" cy="45" r="5" fill="#FED7AA" />
+    <path d="M 65,80 Q 85,60 98,48" stroke="#FED7AA" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="98" cy="48" r="5" fill="#FED7AA" />
+  </g>
+
+  <!-- The Gift Box Flying / Slipping into air! -->
+  <g transform="translate(130, 20) rotate(-18)" filter="url(#chibiShadow)">
+    <rect x="0" y="20" width="80" height="70" rx="6" fill="url(#boxPink)" stroke="#9F1239" stroke-width="2" />
+    <rect x="-4" y="14" width="88" height="14" rx="4" fill="#FDA4AF" stroke="#9F1239" stroke-width="2" />
+    <rect x="34" y="20" width="12" height="70" fill="url(#goldRibbon)" />
+    <rect x="0" y="50" width="80" height="12" fill="url(#goldRibbon)" />
+    <!-- Flying Ribbon Loops -->
+    <ellipse cx="40" cy="14" rx="14" ry="8" fill="url(#goldRibbon)" />
+  </g>
+</svg>
