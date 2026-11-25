@@ -47,7 +47,7 @@ export const BirthdayCommunity: React.FC<BirthdayCommunityProps> = ({
   const animFrameRef = useRef<number | null>(null);
   const lastTimeRef = useRef<number | null>(null);
 
-  // 17 Miembros Oficiales de la Comunidad de Discord
+  // Miembros Oficiales de la Comunidad de Discord
   const communityMembers: CommunityMember[] = [
     {
       id: 'arthed29',
@@ -57,15 +57,6 @@ export const BirthdayCommunity: React.FC<BirthdayCommunityProps> = ({
       role: 'VIP Fam',
       avatarUrl: '/community/arthed29.png',
       birthdayWish: '¡Feliz cumpleaños Fiorela! Que nunca te falten sonrisas y partidas épicas. ✨',
-    },
-    {
-      id: 'athem',
-      name: 'Athem',
-      color: '#E5B869',
-      status: 'offline',
-      role: 'Dota Guardian',
-      avatarUrl: '/community/athem.png',
-      birthdayWish: '¡Felices 26! Gracias por todos los directos y las risas en Discord.',
     },
     {
       id: 'curitaroif',
@@ -87,15 +78,6 @@ export const BirthdayCommunity: React.FC<BirthdayCommunityProps> = ({
       birthdayWish: '¡Felicidades Aleroif! Que subas a más de 10k de MMR y sigas brillando.',
     },
     {
-      id: 'jared',
-      name: 'Jared',
-      color: '#C84D72',
-      status: 'online',
-      role: 'Hámster Squad',
-      avatarUrl: '/community/jared.png',
-      birthdayWish: '¡Feliz cumple Fiore! Eres la mejor streamer, pásala increíble hoy.',
-    },
-    {
       id: 'jhemshc',
       name: 'Jhemshc',
       color: '#4D7EC0',
@@ -112,15 +94,6 @@ export const BirthdayCommunity: React.FC<BirthdayCommunityProps> = ({
       role: 'Ranked Warrior',
       avatarUrl: '/community/jolsmenaqp.png',
       birthdayWish: '¡Fiorela, feliz día! Que cada partida de este año sea una victoria asegurada.',
-    },
-    {
-      id: 'kael',
-      name: 'KAEL',
-      color: '#3B8B82',
-      status: 'offline',
-      role: 'Invoker Main',
-      avatarUrl: '/community/kael.png',
-      birthdayWish: '¡Feliz cumpleaños! Que tus conjuros y sueños se hagan realidad siempre.',
     },
     {
       id: 'liams',
@@ -203,6 +176,96 @@ export const BirthdayCommunity: React.FC<BirthdayCommunityProps> = ({
       role: 'Discord Fam',
       avatarUrl: '/community/zzoids.png',
       birthdayWish: '¡Felices 26 Aleroif! Pásala increíble en tu día, gracias por cada momento compartido. ✨',
+    },
+    {
+      id: 'destroyer',
+      name: 'Destroyer^^',
+      color: '#43B581',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/destroyer.png',
+      birthdayWish: '¡Feliz cumpleaños Fiorela! Que la pases genial y que sigan los éxitos. 🎉',
+    },
+    {
+      id: 'pim_pu',
+      name: 'Pim pu 🐧ᕦ(ò_',
+      color: '#FBB725',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/pim_pu.png',
+      birthdayWish: '¡Felices 26 Aleroif! Gracias por cada momento divertido en el stream. 🎂',
+    },
+    {
+      id: 'hector',
+      name: "'hector 🪽",
+      color: '#A582F7',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/hector.png',
+      birthdayWish: '¡Feliz cumpleaños! Que tengas un gran día lleno de alegrías. ✨',
+    },
+    {
+      id: 'angel',
+      name: 'Angel',
+      color: '#C84D72',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/angel.png',
+      birthdayWish: '¡Muchas felicidades en tu cumpleaños Fiorela! Pásala increíble. 🥳',
+    },
+    {
+      id: 'h3r0',
+      name: 'H3r0',
+      color: '#E5B869',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/h3r0.png',
+      birthdayWish: '¡Feliz cumpleaños Aleroif24! A festejar este día especial con todo. 🌟',
+    },
+    {
+      id: 'gabito',
+      name: 'Gabito',
+      color: '#E07A5F',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/gabito.png',
+      birthdayWish: '¡Feliz cumple Fiore! Que este nuevo año venga con muchas victorias. 🎸',
+    },
+    {
+      id: 'anthonyreymy',
+      name: 'Anthonyreymy',
+      color: '#5E88C8',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/anthonyreymy.png',
+      birthdayWish: '¡Feliz cumpleaños Fiorela! Gracias por compartir tantas partidas y risas. 🎮',
+    },
+    {
+      id: 'lander',
+      name: 'lander',
+      color: '#F45B96',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/lander.png',
+      birthdayWish: '¡Felicidades en tus 26 años! Que se cumplan todos tus sueños. 💖',
+    },
+    {
+      id: 'juanchito',
+      name: 'Juanchito Chanchito',
+      color: '#D63E75',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/juanchito.png',
+      birthdayWish: '¡Feliz cumpleaños Fiorela! Pásala súper bonito con la comunidad. 🐶',
+    },
+    {
+      id: 'las_estrellas',
+      name: 'Las estrellas me detienen',
+      color: '#20B2AA',
+      status: 'online',
+      role: 'Comunidad Discord',
+      avatarUrl: '/community/las_estrellas.png',
+      birthdayWish: '¡Feliz cumpleaños! Que siempre sigas brillando y alcanzando tus metas. ⭐',
     },
   ];
 
